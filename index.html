@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Event Handling and Interactive Elements</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Interactive Web Page</h1>
+            <!-- Event Handling -->
+            <button id="alertButton">Click Me!</button>
+            <input type="text" id="textInput" placeholder="Type something...">
+            <!-- Interactive Elements -->
+             <button id="changeTextButton">Change Text</button>
+            <p id="textToChange">This text will change when you click the button.</p>
+            
+            <div class="tabs">
+                <button class="tab" data-tab="tab1">Tab 1</button>
+                <button class="tab" data-tab="tab2">Tab 2</button>
+                <div id="tabContent">Tab content will appear here.</div>
+            </div>
+        </header>
+        <main>
+            <section id="content">
+                <p>This is a simple interactive web page.</p>
+            </section>
+            <!-- Form Validation-->
+             <form id="signupForm">
+                <input type="text" name="username" placeholder="Username" required/>
+                <input type="email" name="email" placeholder="Password" required minlength="8"/>
+                <input type="password" name="password" placeholder="Password" required minlength="8"/>
+                <button type="submit">Sign Up</button>
+                <p id="formFeedback"></p>
+            </form>
+
+            <script src="script.js"></script>
+        </main>
+        <footer>
+            <p>&copy; 2025 My Web Page</p>
+        </footer>
+</html>
